@@ -14,6 +14,7 @@ const EditPage: FC =  () => {
     
     
         useEffect(() => {
+            document.title = `Редактирование товара №${id}`
             fetch(`${BASE_URL}/${id}`).then(res => res.json()).then(data => {
                 setBrand(data.brand)
                 setName(data.name)

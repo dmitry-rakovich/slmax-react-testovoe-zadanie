@@ -10,6 +10,13 @@ interface IProps {
   };
 };
 
+export async function generateMetadata({
+  params: { id }}:IProps) {
+
+  return {
+    title: `Товар №${id}`,
+  };
+}
 
 export const generateStaticParams = async () => {
   const products: IProduct[] = await getAllProducts()
