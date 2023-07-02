@@ -2,6 +2,7 @@
 
 ```bash
 git clone https://github.com/dmitry-rakovich/slmax-react-testovoe-zadanie.git
+cd slmax-react-testovoe-zadanie
 npm install
 npm run server
 npm build
